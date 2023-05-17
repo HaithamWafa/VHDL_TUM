@@ -6,7 +6,7 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY tb_mulop IS
+ENTITY tb_mulop IS 
 END tb_mulop;
  
 ARCHITECTURE behavior OF tb_mulop IS 
@@ -28,6 +28,7 @@ ARCHITECTURE behavior OF tb_mulop IS
 
  	--Outputs
    signal O_1 : std_logic_vector(15 downto 0);
+	--signal debug : std_logic_vector(16 downto 0);
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
  
@@ -63,7 +64,7 @@ BEGIN
             report "Test failed: modulo behavior is incorrect"
             severity error;
        
-         -- checking if an input of zero is replaced
+         -- checking if an input of zero is replaced 
         I_1 <= x"0000"; -- Input 1
         I_2 <= x"0000"; -- Input 2
       wait for 10 ns;

@@ -1,4 +1,11 @@
-V3 3
+V3 6
+FL /home/haitham/VHDL_LAB/submission_template/submit/direct/idea.vhd 2017/10/18.18:21:37 P.20131013
+EN work/idea 1684337447 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/direct/idea.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/idea/Structural 1684337448 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/direct/idea.vhd \
+      EN work/idea 1684337447
 FL /home/haitham/VHDL_LAB/submission_template/submit/direct/mulop.vhd 2023/05/17.15:00:41 P.20131013
 EN work/mulop 1684328445 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/mulop.vhd \

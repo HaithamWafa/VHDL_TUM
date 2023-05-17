@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.syr" 

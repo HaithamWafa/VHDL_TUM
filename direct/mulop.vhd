@@ -48,29 +48,48 @@ variable abmod2n: integer range 0 to 65535; --16 bits to do a mod 2^16
 
 begin
 
-if (I_1 = "0000") then 
+if (I_1 = x"0000") then 
 	operand_1 := 65536;
+	
 else
 	operand_1 := to_integer(unsigned(I_1));
+	
 end if;
 
-if (I_2 = "0000") then 
+
+--operand_1:= 65536 when I_1 = x"0000" else to_integer(unsigned(I_1));
+--operand_2:= 65536 when I_2 = x"0000" else to_integer(unsigned(I_2));
+
+
+
+if (I_2 = x"0000") then 
 	operand_2 := 65536;
 else
 	operand_2 := to_integer(unsigned(I_2));
 end if;
 
-abdiv2n := (operand_1*operand_2)/65536;
+if (operand_1 = 65536 and operand_2 = 65536) then
+
+	abdiv2n := operand_1*(operand_2/65536);
+
+else
+
+	abdiv2n := (operand_1*operand_2)/65536;
+
+end if;
+
 abmod2n := operand_1*operand_2;
 
 if abmod2n >= abdiv2n then
 
 	temp:=abmod2n-abdiv2n;
+	--debug <= std_logic_vector(to_unsigned(abdiv2n, 17)); 
+
 
 else
 
 	temp:=abmod2n-abdiv2n + 65536 + 1;
-
+	
 end if;
 
 O_1<= std_logic_vector(to_unsigned(temp, 16)); 
