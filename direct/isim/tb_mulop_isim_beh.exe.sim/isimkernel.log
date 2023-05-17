@@ -1,0 +1,10 @@
+Command line:
+   tb_mulop_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49913
+
+Wed May 17 15:24:25 2023
+
+
+ Elaboration Time: 0.02 sec

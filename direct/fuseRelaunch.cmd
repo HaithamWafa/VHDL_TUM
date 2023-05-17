@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/haitham/VHDL_LAB/submission_template/submit/direct/tb_mulop_isim_beh.exe" -prj "/home/haitham/VHDL_LAB/submission_template/submit/direct/tb_mulop_beh.prj" "work.tb_mulop" 
