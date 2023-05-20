@@ -17,7 +17,9 @@ ARCHITECTURE behavior OF tb_mulop IS
     PORT(
          I_1 : IN  std_logic_vector(15 downto 0);
          I_2 : IN  std_logic_vector(15 downto 0);
-         O_1 : OUT  std_logic_vector(15 downto 0)
+         O_1 : OUT  std_logic_vector(15 downto 0);
+			debug : OUT  std_logic_vector(16 downto 0)
+			
         );
     END COMPONENT;
     
@@ -28,7 +30,7 @@ ARCHITECTURE behavior OF tb_mulop IS
 
  	--Outputs
    signal O_1 : std_logic_vector(15 downto 0);
-	--signal debug : std_logic_vector(16 downto 0);
+	signal debug : std_logic_vector(16 downto 0);
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
  
@@ -39,7 +41,8 @@ BEGIN
    uut: mulop PORT MAP (
           I_1 => I_1,
           I_2 => I_2,
-          O_1 => O_1
+          O_1 => O_1,
+			 debug=>debug
         );
 
      stim_proc: process
@@ -71,7 +74,85 @@ BEGIN
         assert O_1 = x"0001"
             report "Test failed: check operands"
             severity error;
-  
+			
+		 --reference model tests as provided in the lab
+		 
+		  I_1 <= x"0000";
+        I_2 <= x"0000";
+		  wait for period;
+        assert O_1 = x"0001"
+            report "Test 1: failed"
+            severity error;
+				
+        I_1 <= x"0001";
+        I_2 <= x"0000";
+		  wait for period;
+        assert O_1 = x"0000"
+            report "Test 2: failed"
+            severity error;
+				
+		  I_1 <= x"0001";
+        I_2 <= x"0001";
+		  wait for period;
+        assert O_1 = x"0001"
+            report "Test 3: failed"
+            severity error;
+				
+        I_1 <= x"0003";
+        I_2 <= x"0001";
+		  wait for period;
+        assert O_1 = x"0003"
+            report "Test 4: failed"
+            severity error;	
+				 	
+		  I_1 <= x"0003";
+        I_2 <= x"0003";
+		  wait for period;
+        assert O_1 = x"0009"
+            report "Test 5: failed"
+            severity error;
+				
+        I_1 <= x"7fff";
+        I_2 <= x"0003";
+		  wait for period;
+        assert O_1 = x"7ffc"
+            report "Test 6: failed"
+            severity error;
+		  I_1 <= x"7fff";
+        I_2 <= x"7fff";
+		  wait for period;
+        assert O_1 = x"c003"
+            report "Test 7: failed"
+            severity error;
+				
+        I_1 <= x"ffff";
+        I_2 <= x"7fff";
+		  wait for period;
+        assert O_1 = x"0003"
+            report "Test 8: failed"
+            severity error;	
+				
+		  I_1 <= x"ffff";
+        I_2 <= x"ffff";
+		  wait for period;
+        assert O_1 = x"0004"
+            report "Test 9: failed"
+            severity error;	
+				
+		  I_1 <= x"8000";
+        I_2 <= x"ffff";
+		  wait for period;
+        assert O_1 = x"0001"
+            report "Test 10: failed"
+            severity error;	
+				
+		  I_1 <= x"8000";
+        I_2 <= x"8000";
+		  wait for period;
+        assert O_1 = x"c001"
+            report "Test 11: failed"
+            severity error;	
+
 
         wait;
     end process;

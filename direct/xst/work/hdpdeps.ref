@@ -6,10 +6,10 @@ EN work/idea 1684337447 \
 AR work/idea/Structural 1684337448 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/idea.vhd \
       EN work/idea 1684337447
-FL /home/haitham/VHDL_LAB/submission_template/submit/direct/mulop.vhd 2023/05/17.15:00:41 P.20131013
-EN work/mulop 1684328445 \
+FL /home/haitham/VHDL_LAB/submission_template/submit/direct/mulop.vhd 2023/05/19.01:09:57 P.20131013
+EN work/mulop 1684447857 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/mulop.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/mulop/Behavioral 1684328446 \
+AR work/mulop/Behavioral 1684447858 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/mulop.vhd \
-      EN work/mulop 1684328445
+      EN work/mulop 1684447857

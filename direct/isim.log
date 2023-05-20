@@ -1,6 +1,5 @@
 ISim log file
 Running: /home/haitham/VHDL_LAB/submission_template/submit/direct/tb_mulop_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/haitham/VHDL_LAB/submission_template/submit/direct/tb_mulop_isim_beh.wdb 
-INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
 ISim P.20131013 (signature 0xfbc00daa)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -13,4 +12,12 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 at 10 ns(1), Instance /tb_mulop/uut/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-# exit 0
+at 50 ns: Error: Test 2: failed
+at 80 ns(1), Instance /tb_mulop/uut/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 90 ns(1), Instance /tb_mulop/uut/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 100 ns: Error: Test 7: failed
+at 100 ns(1), Instance /tb_mulop/uut/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 120 ns: Error: Test 9: failed
+at 120 ns(1), Instance /tb_mulop/uut/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 130 ns(1), Instance /tb_mulop/uut/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 140 ns: Error: Test 11: failed

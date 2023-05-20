@@ -74,33 +74,53 @@ BEGIN
    stim_proc: process
 	 constant period: time := 10 ns;
    begin
-        -- Add two positive numbers
-        I_1 <= x"0001";
-        I_2 <= x"0001";
+        
+        I_1 <= x"0000";
+        I_2 <= x"0000";
 		  wait for period;
-        assert O_1 = x"0002"
-            report "Test failed: adding two positive numbers failed"
+        assert O_1 = x"0000"
+            report "Test 1: failed"
             severity error;
 		  
-	    -- Add 1 to max value to test overflow/wrap-around condition
-        I_1 <= x"FFFF"; -- Input 1
-        I_2 <= x"0001"; -- Input 2
+        I_1 <= x"7ce3"; -- Input 1
+        I_2 <= x"0000"; -- Input 2
 
 		  	wait for period;
 
     
-        assert O_1 = x"0000"
-            report "Test failed: wrap-around behavior is incorrect"
+        assert O_1 = x"7ce3"
+            report "Test 2: failed"
             severity error;
        
-         -- Add 65535 to a random number test modulo 65536 addition
-        I_1 <= x"FFFF"; -- Input 1
-        I_2 <= x"FF00"; -- Input 2
-      wait for 10 ns;
-        assert O_1 = x"FEFF"
-            report "Test failed: modulo behavior is incorrect"
+        I_1 <= x"7ce3"; -- Input 1
+        I_2 <= x"2db6"; -- Input 2
+      wait for period;
+        assert O_1 = x"aa99"
+            report "Test 3: failed"
             severity error;
-  
+				
+				 
+        I_1 <= x"fce3"; -- Input 1
+        I_2 <= x"2db6"; -- Input 2
+      wait for period;
+        assert O_1 = x"2a99"
+            report "Test 4: failed"
+            severity error;
+				 
+        I_1 <= x"fce3"; -- Input 1
+        I_2 <= x"edb6"; -- Input 2
+      wait for period;
+        assert O_1 = x"ea99"
+            report "Test 5: failed"
+            severity error;
+				 
+        I_1 <= x"7ce3"; -- Input 1
+        I_2 <= x"edb6"; -- Input 2
+      wait for period;
+        assert O_1 = x"6a99"
+            report "Test 6: failed"
+            severity error;
+ 
 
         wait;
     end process;

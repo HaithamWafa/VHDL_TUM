@@ -54,12 +54,7 @@ ARCHITECTURE behavior OF tb_xorop IS
 
  	--Outputs
    signal O_1 : std_logic_vector(15 downto 0);
-	--signal clock : std_logic:='0';
-   -- No clocks detected in port list. Replace <clock> below with 
-   -- appropriate port name 
- 
-   --constant clock_period : time := 10 ns;
- 
+	
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
@@ -69,29 +64,32 @@ BEGIN
           O_1 => O_1
         );
 
-  
- 
-
    -- Stimulus process
    stim_proc: process
+	 constant period: time := 10 ns;
    begin		
-      -- hold reset state for 100 ns.
-      wait for 100 ns;	
-		I_1<="0000000000000000";
-		I_2<="1111111111111111";
+      	
+		I_1<=x"0000";
+		I_2<=x"0000";
+		wait for period;
+		assert O_1 = x"0000"
+            report "Test 1 failed"
+            severity error;
 		
-     	wait for 10 ns;
-		I_1<="1111111111111111";
-		I_2<="1111111111111111";
-			wait for 10 ns;
-		I_1<="0000000000000000";
-		I_2<="0000000000000000";
-			wait for 10 ns;
-		I_1<="1111111111111111";
-		I_2<="0000000000000000";
+		I_1<=x"1234";
+		I_2<=x"5678";
+		wait for period;
+		assert O_1 = x"444c"
+            report "Test 2 failed"
+            severity error;
 				
-      -- insert stimulus here 
-
+		I_1<=x"1234";
+		I_2<=x"0000";
+		wait for period;
+		assert O_1 = x"1234"
+            report "Test 3 failed"
+            severity error;
+     
       wait;
    end process;
 
