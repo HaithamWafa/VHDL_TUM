@@ -1,1 +1,13 @@
 xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.syr" 
+vhdtdtfi -lib work xorop.vhd -lib work mulop.vhd -lib work addop.vhd -lib work round.vhd -lib work idea.vhd -prj idea -o idea.spl -module idea -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e idea.spl /home/haitham/VHDL_LAB/submission_template/submit/direct/idea.sym 
+vhdtdtfi -prj idea -o /home/haitham/VHDL_LAB/submission_template/submit/direct/idea.vhi -module idea -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work xorop.vhd -lib work mulop.vhd -lib work addop.vhd -lib work round.vhd -lib work idea.vhd 
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.syr" 
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.syr" 
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.syr" 
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.syr" 
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.syr" 
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.syr" 
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.syr" 
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.syr" 
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.syr" 

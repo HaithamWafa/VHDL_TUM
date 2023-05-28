@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/haitham/VHDL_LAB/submission_template/submit/direct/tb_mulop_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/haitham/VHDL_LAB/submission_template/submit/direct/tb_mulop_isim_beh.wdb 
+Running: /home/haitham/VHDL_LAB/submission_template/submit/direct/tb_idea_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/haitham/VHDL_LAB/submission_template/submit/direct/tb_idea_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -10,14 +10,341 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_idea/uut/round_1/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_1/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_1/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_1/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_1/multplier_3/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_1/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_1/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_1/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_3/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_3/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_3/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_3/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_3/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_3/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_3/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
 Finished circuit initialization process.
-at 10 ns(1), Instance /tb_mulop/uut/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-at 50 ns: Error: Test 2: failed
-at 80 ns(1), Instance /tb_mulop/uut/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-at 90 ns(1), Instance /tb_mulop/uut/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-at 100 ns: Error: Test 7: failed
-at 100 ns(1), Instance /tb_mulop/uut/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-at 120 ns: Error: Test 9: failed
-at 120 ns(1), Instance /tb_mulop/uut/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-at 130 ns(1), Instance /tb_mulop/uut/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-at 140 ns: Error: Test 11: failed
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_3/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_3/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_3/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_3/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_1/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_1/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_1/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_1/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_3/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_3/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_1/multplier_3/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_1/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_1/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_1/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_3/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_3/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_2/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_3/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_4/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_5/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_6/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_7/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_4/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_4/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/round_8/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_2/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_2/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea/uut/output_trans/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(3), Instance /tb_idea/uut/round_1/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(5), Instance /tb_idea/uut/round_1/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(7), Instance /tb_idea/uut/round_2/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(8), Instance /tb_idea/uut/round_2/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(12), Instance /tb_idea/uut/round_2/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(15), Instance /tb_idea/uut/round_3/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(19), Instance /tb_idea/uut/round_3/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(21), Instance /tb_idea/uut/round_4/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(22), Instance /tb_idea/uut/round_4/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(24), Instance /tb_idea/uut/round_4/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(26), Instance /tb_idea/uut/round_4/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(33), Instance /tb_idea/uut/round_5/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(35), Instance /tb_idea/uut/round_6/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(40), Instance /tb_idea/uut/round_6/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(45), Instance /tb_idea/uut/round_7/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(47), Instance /tb_idea/uut/round_7/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(49), Instance /tb_idea/uut/round_8/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(50), Instance /tb_idea/uut/round_8/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(54), Instance /tb_idea/uut/round_8/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 10 ns(57), Instance /tb_idea/uut/output_trans/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# exit 0

@@ -21,17 +21,16 @@ WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Onl
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/direct/mulop.vhd" in Library work.
-Entity <mulop> compiled.
-Entity <mulop> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity mulop is up to date.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 
 
-Total memory usage is 461248 kilobytes
+Total memory usage is 461384 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

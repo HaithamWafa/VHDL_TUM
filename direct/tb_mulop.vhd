@@ -17,8 +17,8 @@ ARCHITECTURE behavior OF tb_mulop IS
     PORT(
          I_1 : IN  std_logic_vector(15 downto 0);
          I_2 : IN  std_logic_vector(15 downto 0);
-         O_1 : OUT  std_logic_vector(15 downto 0);
-			debug : OUT  std_logic_vector(16 downto 0)
+         O_1 : OUT  std_logic_vector(15 downto 0)
+			--debug : OUT  std_logic_vector(16 downto 0)
 			
         );
     END COMPONENT;
@@ -30,10 +30,8 @@ ARCHITECTURE behavior OF tb_mulop IS
 
  	--Outputs
    signal O_1 : std_logic_vector(15 downto 0);
-	signal debug : std_logic_vector(16 downto 0);
-   -- No clocks detected in port list. Replace <clock> below with 
-   -- appropriate port name 
- 
+	--signal debug : std_logic_vector(16 downto 0);
+   
   
 BEGIN
  
@@ -41,8 +39,8 @@ BEGIN
    uut: mulop PORT MAP (
           I_1 => I_1,
           I_2 => I_2,
-          O_1 => O_1,
-			 debug=>debug
+          O_1 => O_1
+			-- debug=>debug
         );
 
      stim_proc: process

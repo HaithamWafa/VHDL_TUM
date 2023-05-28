@@ -1,0 +1,5 @@
+set -tmpdir "/home/haitham/VHDL_LAB/submission_template/submit/direct/xst/projnav.tmp"
+set -xsthdpdir "/home/haitham/VHDL_LAB/submission_template/submit/direct/xst"
+elaborate
+-ifn xorop.prj
+-ifmt mixed
