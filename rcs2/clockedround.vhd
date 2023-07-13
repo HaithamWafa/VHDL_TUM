@@ -55,8 +55,95 @@ entity clockedround is
 end clockedround;
 
 architecture Structural of clockedround is
+component datapath
+    port(
+         CLOCK: in STD_LOGIC;
+			  enable1: in STD_LOGIC;
+			  enable2: in STD_LOGIC;
+			  enable3: in STD_LOGIC;
+			  SEL: in STD_LOGIC_VECTOR(1 downto 0);
+			  X1 : in  STD_LOGIC_VECTOR (15 downto 0);
+           X2 : in  STD_LOGIC_VECTOR (15 downto 0);
+           X3 : in  STD_LOGIC_VECTOR (15 downto 0);
+           X4 : in  STD_LOGIC_VECTOR (15 downto 0);
+           Z1 : in  STD_LOGIC_VECTOR (15 downto 0);
+           Z2 : in  STD_LOGIC_VECTOR (15 downto 0);
+           Z3 : in  STD_LOGIC_VECTOR (15 downto 0);
+           Z4 : in  STD_LOGIC_VECTOR (15 downto 0);
+           Z5 : in  STD_LOGIC_VECTOR (15 downto 0);
+           Z6 : in  STD_LOGIC_VECTOR (15 downto 0);
+           Y1 : out  STD_LOGIC_VECTOR (15 downto 0);
+           Y2 : out  STD_LOGIC_VECTOR (15 downto 0);
+           Y3 : out  STD_LOGIC_VECTOR (15 downto 0);
+           Y4 : out  STD_LOGIC_VECTOR (15 downto 0);
+			  Y1_TRAFO : out  STD_LOGIC_VECTOR (15 downto 0);
+			  Y2_TRAFO : out  STD_LOGIC_VECTOR (15 downto 0);
+			  Y3_TRAFO : out  STD_LOGIC_VECTOR (15 downto 0);
+			  Y4_TRAFO : out  STD_LOGIC_VECTOR (15 downto 0)		
+			  );
+   end component;
+component control
+    port(
+           CLK : in  STD_LOGIC;
+           INIT : in  STD_LOGIC;
+           TRAFO : in STD_LOGIC;
+           EN125 : out  STD_LOGIC;
+           EN346 : out  STD_LOGIC;
+           EN78 : out  STD_LOGIC;
+           RESULT : out  STD_LOGIC;
+           S : out  STD_LOGIC_VECTOR(1 downto 0);
+           S_T: out STD_LOGIC_VECTOR(1 downto 0)	
+        );
+end component;		  
+
+signal CU_select: std_logic_vector(1 downto 0);		  
+signal CU_enable1: std_logic;	
+signal CU_enable2: std_logic;		
+signal CU_enable3: std_logic;		
+signal St: std_logic_vector(1 downto 0);	
 
 begin
+
+ctrl1: control port map (
+		CLK    => CLK,
+		INIT   =>INIT,
+		TRAFO  =>TRAFO,
+		EN125  =>CU_enable1,
+		EN346  =>CU_enable2,
+		EN78   =>CU_enable3,
+		RESULT => RESULT ,
+		S => CU_select ,
+		S_T => St
+		);
+dp1: datapath port map (
+	CLOCK => CLK,
+	enable1 => CU_enable1,
+	enable2 => CU_enable2,
+	enable3 => CU_enable3,
+	SEL => CU_select,
+	 X1 => X1,
+    X2 => X2,
+    X3 => X3,
+    X4 => X4,
+    Z1 => Z1,
+    Z2 => Z2,
+    Z3 => Z3,
+    Z4 => Z4,
+    Z5 => Z5,
+    Z6 => Z6,
+    Y1 => Y1,
+    Y2 => Y2,
+    Y3 => Y3,
+    Y4 => Y4,
+	 Y1_TRAFO  => Y1_TRAFO,
+	 Y2_TRAFO  => Y2_TRAFO,
+	 Y3_TRAFO  => Y3_TRAFO,
+	 Y4_TRAFO  => Y4_TRAFO
+);
+
+
+
+
 
 
 end Structural;

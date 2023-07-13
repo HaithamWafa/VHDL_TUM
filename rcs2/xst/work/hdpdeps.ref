@@ -1,0 +1,143 @@
+V3 75
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/addop.vhd 2023/05/28.19:24:39 P.20131013
+EN work/addop 1689150853 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/addop.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/addop/Behavioral 1689150854 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/addop.vhd \
+      EN work/addop 1689150853
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/clk_div.vhd 2016/04/20.12:48:16 P.20131013
+EN work/clk_div 1688997988 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/clk_div.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/clk_div/Behavioral 1688997989 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/clk_div.vhd \
+      EN work/clk_div 1688997988
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/clockedround_ext.vhd 2023/07/11.17:52:21 P.20131013
+EN work/clockedround_ext 1689150863 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/clockedround_ext.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/clockedround_ext/Structural 1689150864 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/clockedround_ext.vhd \
+      EN work/clockedround_ext 1689150863 CP control_ext CP datapath
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/control.vhd 2023/07/10.15:51:41 P.20131013
+EN work/control 1688993598 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/control.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/control/Behavioral 1688993599 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/control.vhd \
+      EN work/control 1688993598
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/control_ext.vhd 2023/07/11.14:15:32 P.20131013
+EN work/control_ext 1689150859 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/control_ext.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/control_ext/Behavioral 1689150860 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/control_ext.vhd \
+      EN work/control_ext 1689150859
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/datapath.vhd 2023/07/11.17:53:08 P.20131013
+EN work/datapath 1689150861 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/datapath.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/datapath/Behavioral 1689150862 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/datapath.vhd \
+      EN work/datapath 1689150861 CP mux4x1 CP mulop CP addop CP xorop CP reg16
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/idea_com.vhd 2016/04/20.12:48:16 P.20131013
+EN work/idea_com 1688997992 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/idea_com.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/idea_com/Behavioral 1688997993 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/idea_com.vhd \
+      EN work/idea_com 1688997992 CP clk_div CP idea_com_inner
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/idea_com_inner.vhd 2017/10/18.18:29:01 P.20131013
+EN work/idea_com_inner 1688997990 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/idea_com_inner.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/idea_com_inner/Behavioral 1688997991 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/idea_com_inner.vhd \
+      EN work/idea_com_inner 1688997990 CP uart CP idea_rcs2 CP mux2x1
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/idea_rcs2.vhd 2023/07/12.11:33:09 P.20131013
+EN work/idea_rcs2 1689150871 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/idea_rcs2.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/idea_rcs2/Structural 1689150872 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/idea_rcs2.vhd \
+      EN work/idea_rcs2 1689150871 CP clockedround_ext CP roundcounter \
+      CP key_generator CP mux21 CP reg16
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/key_generator.vhd 2023/06/22.12:49:20 P.20131013
+EN work/key_generator 1689150867 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/key_generator.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/key_generator/Behavioral 1689150868 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/key_generator.vhd \
+      EN work/key_generator 1689150867
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/mulop.vhd 2023/05/28.19:29:39 P.20131013
+EN work/mulop 1689150851 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/mulop.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mulop/Behavioral 1689150852 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/mulop.vhd \
+      EN work/mulop 1689150851
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux21.vhd 2023/06/25.11:01:44 P.20131013
+EN work/mux21 1689150869 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux21.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux21/Behavioral 1689150870 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux21.vhd \
+      EN work/mux21 1689150869
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux4x1.vhd 2023/07/08.16:24:54 P.20131013
+EN work/mux4x1 1689150849 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux4x1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux4x1/Behavioral 1689150850 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux4x1.vhd \
+      EN work/mux4x1 1689150849
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/reg16.vhd 2023/06/21.21:54:58 P.20131013
+EN work/reg16 1689150857 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/reg16.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/reg16/Behavioral 1689150858 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/reg16.vhd \
+      EN work/reg16 1689150857
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/roundcounter.vhd 2023/07/12.01:50:38 P.20131013
+EN work/roundcounter 1689150865 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/roundcounter.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/roundcounter/Behavioral 1689150866 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/roundcounter.vhd \
+      EN work/roundcounter 1689150865
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/rxcver.vhd 2016/04/20.12:48:16 P.20131013
+EN work/rxcver 1688997982 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/rxcver.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/std_logic_misc 1381692178 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/rxcver/behavior 1688997983 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/rxcver.vhd \
+      EN work/rxcver 1688997982
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/txmit.vhd 2016/04/20.12:48:16 P.20131013
+EN work/txmit 1688997980 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/txmit.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/std_logic_misc 1381692178 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/txmit/behavior 1688997981 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/txmit.vhd \
+      EN work/txmit 1688997980
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/uart.vhd 2016/04/20.12:48:16 P.20131013
+EN work/uart 1688997984 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/uart.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/std_logic_misc 1381692178 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/uart/behavior 1688997985 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/uart.vhd \
+      EN work/uart 1688997984 CP txmit CP rxcver
+FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/xorop.vhd 2023/05/28.19:19:02 P.20131013
+EN work/xorop 1689150855 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/xorop.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/xorop/Behavioral 1689150856 \
+      FL /home/haitham/VHDL_LAB/submission_template/submit/rcs2/xorop.vhd \
+      EN work/xorop 1689150855

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/roundcounter.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/roundcounter.syr" 

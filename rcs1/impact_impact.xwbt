@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/haitham/VHDL_LAB/submission_template/submit/rcs1/impact.xsl
+OUTFILE=/home/haitham/VHDL_LAB/submission_template/submit/rcs1/impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=/home/haitham/VHDL_LAB/submission_template/submit/rcs1
+LICENSE=iMPACT
+USER_INFO=iMPACT

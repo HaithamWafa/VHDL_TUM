@@ -1,0 +1,8 @@
+vhdl work "xorop.vhd"
+vhdl work "reg16.vhd"
+vhdl work "mux4x1.vhd"
+vhdl work "mulop.vhd"
+vhdl work "addop.vhd"
+vhdl work "datapath.vhd"
+vhdl work "control_ext.vhd"
+vhdl work "clockedround_ext.vhd"

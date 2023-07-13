@@ -1,0 +1,658 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+Reading design: datapath.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "datapath.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "datapath"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : datapath
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux4x1.vhd" in Library work.
+Architecture behavioral of Entity mux4x1 is up to date.
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/mulop.vhd" in Library work.
+Architecture behavioral of Entity mulop is up to date.
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/addop.vhd" in Library work.
+Architecture behavioral of Entity addop is up to date.
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/xorop.vhd" in Library work.
+Architecture behavioral of Entity xorop is up to date.
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/reg16.vhd" in Library work.
+Architecture behavioral of Entity reg16 is up to date.
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/datapath.vhd" in Library work.
+Architecture behavioral of Entity datapath is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <datapath> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux4x1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mulop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <addop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <xorop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reg16> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <datapath> in library <work> (Architecture <behavioral>).
+Entity <datapath> analyzed. Unit <datapath> generated.
+
+Analyzing Entity <mux4x1> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux4x1.vhd" line 56: Mux is complete : default of case is discarded
+Entity <mux4x1> analyzed. Unit <mux4x1> generated.
+
+Analyzing Entity <mulop> in library <work> (Architecture <behavioral>).
+Entity <mulop> analyzed. Unit <mulop> generated.
+
+Analyzing Entity <addop> in library <work> (Architecture <behavioral>).
+Entity <addop> analyzed. Unit <addop> generated.
+
+Analyzing Entity <xorop> in library <work> (Architecture <behavioral>).
+Entity <xorop> analyzed. Unit <xorop> generated.
+
+Analyzing Entity <reg16> in library <work> (Architecture <behavioral>).
+Entity <reg16> analyzed. Unit <reg16> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mux4x1>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux4x1.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <O>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <mux4x1> synthesized.
+
+
+Synthesizing Unit <mulop>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/mulop.vhd".
+    Found 16-bit addsub for signal <O_1>.
+    Found 17x17-bit multiplier for signal <mult_result$mult0000> created at line 58.
+    Found 16-bit subtractor for signal <O_1$addsub0000> created at line 69.
+    Found 17-bit comparator greatequal for signal <O_1$cmp_ge0000> created at line 63.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   1 Comparator(s).
+Unit <mulop> synthesized.
+
+
+Synthesizing Unit <addop>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/addop.vhd".
+    Found 16-bit adder for signal <O_1>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <addop> synthesized.
+
+
+Synthesizing Unit <xorop>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/xorop.vhd".
+    Found 16-bit xor2 for signal <O_1>.
+Unit <xorop> synthesized.
+
+
+Synthesizing Unit <reg16>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/reg16.vhd".
+    Found 16-bit register for signal <data_out>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <reg16> synthesized.
+
+
+Synthesizing Unit <datapath>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/datapath.vhd".
+Unit <datapath> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 17x17-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 1
+ 16-bit addsub                                         : 1
+ 16-bit subtractor                                     : 1
+# Registers                                            : 8
+ 16-bit register                                       : 8
+# Comparators                                          : 1
+ 17-bit comparator greatequal                          : 1
+# Multiplexers                                         : 4
+ 16-bit 4-to-1 multiplexer                             : 4
+# Xors                                                 : 5
+ 16-bit xor2                                           : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 17x17-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 1
+ 16-bit addsub                                         : 1
+ 16-bit subtractor                                     : 1
+# Registers                                            : 128
+ Flip-Flops                                            : 128
+# Comparators                                          : 1
+ 17-bit comparator greatequal                          : 1
+# Multiplexers                                         : 4
+ 16-bit 4-to-1 multiplexer                             : 4
+# Xors                                                 : 5
+ 16-bit xor2                                           : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <datapath>: instances <reg1>, <reg4> of unit <reg16> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <datapath>: instances <reg1>, <reg7> of unit <reg16> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <datapath>: instances <reg2>, <reg3> of unit <reg16> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <datapath>: instances <reg2>, <reg8> of unit <reg16> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <datapath>: instances <reg5>, <reg6> of unit <reg16> are equivalent, second instance is removed
+
+Optimizing unit <datapath> ...
+
+Optimizing unit <mulop> ...
+
+Optimizing unit <reg16> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block datapath, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 48
+ Flip-Flops                                            : 48
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : datapath.ngr
+Top Level Output File Name         : datapath
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 228
+
+Cell Usage :
+# BELS                             : 442
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 112
+#      LUT3                        : 127
+#      LUT4                        : 41
+#      LUT4_L                      : 1
+#      MUXCY                       : 62
+#      MUXF5                       : 48
+#      VCC                         : 1
+#      XORCY                       : 48
+# FlipFlops/Latches                : 48
+#      FDE                         : 48
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 227
+#      IBUF                        : 163
+#      OBUF                        : 64
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      150  out of   4656     3%  
+ Number of Slice Flip Flops:             48  out of   9312     0%  
+ Number of 4 input LUTs:                282  out of   9312     3%  
+ Number of IOs:                         228
+ Number of bonded IOBs:                 228  out of    232    98%  
+ Number of MULT18X18SIOs:                 1  out of     20     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLOCK                              | BUFGP                  | 48    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 21.460ns (Maximum Frequency: 46.598MHz)
+   Minimum input arrival time before clock: 23.080ns
+   Maximum output required time after clock: 24.940ns
+   Maximum combinational path delay: 26.560ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLOCK'
+  Clock period: 21.460ns (frequency: 46.598MHz)
+  Total number of paths / destination ports: 7689376 / 48
+-------------------------------------------------------------------------
+Delay:               21.460ns (Levels of Logic = 43)
+  Source:            reg2/data_out_4 (FF)
+  Destination:       reg5/data_out_15 (FF)
+  Source Clock:      CLOCK rising
+  Destination Clock: CLOCK rising
+
+  Data Path: reg2/data_out_4 to reg5/data_out_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.591   0.566  reg2/data_out_4 (reg2/data_out_4)
+     LUT3:I2->O            1   0.704   0.000  mux2/Mmux_O_310 (mux2/Mmux_O_310)
+     MUXF5:I1->O           2   0.321   0.622  mux2/Mmux_O_2_f5_9 (mux2_out<4>)
+     LUT4:I0->O            1   0.704   0.499  multplier_1/b_temp_cmp_eq000025 (multplier_1/b_temp_cmp_eq000025)
+     LUT4:I1->O            1   0.704   0.420  multplier_1/b_temp_cmp_eq000076 (multplier_1/b_temp_cmp_eq0000)
+     MULT18X18SIO:B16->P16    3   4.860   0.610  multplier_1/Mmult_mult_result_mult0000 (multplier_1/mult_result_mult0000<16>)
+     LUT2:I1->O            1   0.704   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_lut<0> (multplier_1/Mcompar_O_1_cmp_ge0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<0> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<1> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<2> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<3> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<4> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<5> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<6> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<7> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<8> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<9> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<10> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<11> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<12> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<13> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<14> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<15> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<15>)
+     MUXCY:CI->O          32   0.059   1.297  multplier_1/Mcompar_O_1_cmp_ge0000_cy<16> (multplier_1/O_1_cmp_ge0000)
+     LUT3:I2->O            0   0.704   0.000  multplier_1/O_1_mux0000<0>1 (multplier_1/O_1_mux0000<0>)
+     MUXCY:DI->O           1   0.888   0.000  multplier_1/Maddsub_O_1_cy<0> (multplier_1/Maddsub_O_1_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<1> (multplier_1/Maddsub_O_1_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<2> (multplier_1/Maddsub_O_1_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<3> (multplier_1/Maddsub_O_1_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<4> (multplier_1/Maddsub_O_1_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<5> (multplier_1/Maddsub_O_1_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<6> (multplier_1/Maddsub_O_1_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<7> (multplier_1/Maddsub_O_1_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<8> (multplier_1/Maddsub_O_1_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<9> (multplier_1/Maddsub_O_1_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<10> (multplier_1/Maddsub_O_1_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<11> (multplier_1/Maddsub_O_1_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<12> (multplier_1/Maddsub_O_1_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<13> (multplier_1/Maddsub_O_1_cy<13>)
+     XORCY:CI->O           5   0.804   0.637  multplier_1/Maddsub_O_1_xor<14> (mul1_out<14>)
+     LUT4:I3->O            1   0.704   0.000  adder_1/Madd_O_1_lut<14> (adder_1/Madd_O_1_lut<14>)
+     MUXCY:S->O            0   0.464   0.000  adder_1/Madd_O_1_cy<14> (adder_1/Madd_O_1_cy<14>)
+     XORCY:CI->O           4   0.804   0.666  adder_1/Madd_O_1_xor<15> (adder1_out<15>)
+     LUT2:I1->O            1   0.704   0.000  xor_1/Mxor_O_1_Result<15>1 (xor1_out<15>)
+     FDE:D                     0.308          reg5/data_out_15
+    ----------------------------------------
+    Total                     21.460ns (16.143ns logic, 5.317ns route)
+                                       (75.2% logic, 24.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLOCK'
+  Total number of paths / destination ports: 46133808 / 96
+-------------------------------------------------------------------------
+Offset:              23.080ns (Levels of Logic = 44)
+  Source:            SEL<0> (PAD)
+  Destination:       reg5/data_out_15 (FF)
+  Destination Clock: CLOCK rising
+
+  Data Path: SEL<0> to reg5/data_out_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           112   1.218   1.462  SEL_0_IBUF (SEL_0_IBUF)
+     LUT3:I0->O            1   0.704   0.000  mux1/Mmux_O_3 (mux1/Mmux_O_3)
+     MUXF5:I1->O           2   0.321   0.622  mux1/Mmux_O_2_f5 (mux1_out<0>)
+     LUT4:I0->O            1   0.704   0.595  multplier_1/a_temp_cmp_eq000012 (multplier_1/a_temp_cmp_eq000012)
+     LUT4:I0->O            1   0.704   0.420  multplier_1/a_temp_cmp_eq000076 (multplier_1/a_temp_cmp_eq0000)
+     MULT18X18SIO:A16->P16    3   4.860   0.610  multplier_1/Mmult_mult_result_mult0000 (multplier_1/mult_result_mult0000<16>)
+     LUT2:I1->O            1   0.704   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_lut<0> (multplier_1/Mcompar_O_1_cmp_ge0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<0> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<1> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<2> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<3> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<4> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<5> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<6> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<7> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<8> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<9> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<10> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<11> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<12> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<13> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<14> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<15> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<15>)
+     MUXCY:CI->O          32   0.059   1.297  multplier_1/Mcompar_O_1_cmp_ge0000_cy<16> (multplier_1/O_1_cmp_ge0000)
+     LUT3:I2->O            0   0.704   0.000  multplier_1/O_1_mux0000<0>1 (multplier_1/O_1_mux0000<0>)
+     MUXCY:DI->O           1   0.888   0.000  multplier_1/Maddsub_O_1_cy<0> (multplier_1/Maddsub_O_1_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<1> (multplier_1/Maddsub_O_1_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<2> (multplier_1/Maddsub_O_1_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<3> (multplier_1/Maddsub_O_1_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<4> (multplier_1/Maddsub_O_1_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<5> (multplier_1/Maddsub_O_1_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<6> (multplier_1/Maddsub_O_1_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<7> (multplier_1/Maddsub_O_1_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<8> (multplier_1/Maddsub_O_1_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<9> (multplier_1/Maddsub_O_1_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<10> (multplier_1/Maddsub_O_1_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<11> (multplier_1/Maddsub_O_1_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<12> (multplier_1/Maddsub_O_1_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<13> (multplier_1/Maddsub_O_1_cy<13>)
+     XORCY:CI->O           5   0.804   0.637  multplier_1/Maddsub_O_1_xor<14> (mul1_out<14>)
+     LUT4:I3->O            1   0.704   0.000  adder_1/Madd_O_1_lut<14> (adder_1/Madd_O_1_lut<14>)
+     MUXCY:S->O            0   0.464   0.000  adder_1/Madd_O_1_cy<14> (adder_1/Madd_O_1_cy<14>)
+     XORCY:CI->O           4   0.804   0.666  adder_1/Madd_O_1_xor<15> (adder1_out<15>)
+     LUT2:I1->O            1   0.704   0.000  xor_1/Mxor_O_1_Result<15>1 (xor1_out<15>)
+     FDE:D                     0.308          reg5/data_out_15
+    ----------------------------------------
+    Total                     23.080ns (16.770ns logic, 6.310ns route)
+                                       (72.7% logic, 27.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK'
+  Total number of paths / destination ports: 7689440 / 64
+-------------------------------------------------------------------------
+Offset:              24.940ns (Levels of Logic = 44)
+  Source:            reg2/data_out_4 (FF)
+  Destination:       Y3<15> (PAD)
+  Source Clock:      CLOCK rising
+
+  Data Path: reg2/data_out_4 to Y3<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.591   0.566  reg2/data_out_4 (reg2/data_out_4)
+     LUT3:I2->O            1   0.704   0.000  mux2/Mmux_O_310 (mux2/Mmux_O_310)
+     MUXF5:I1->O           2   0.321   0.622  mux2/Mmux_O_2_f5_9 (mux2_out<4>)
+     LUT4:I0->O            1   0.704   0.499  multplier_1/b_temp_cmp_eq000025 (multplier_1/b_temp_cmp_eq000025)
+     LUT4:I1->O            1   0.704   0.420  multplier_1/b_temp_cmp_eq000076 (multplier_1/b_temp_cmp_eq0000)
+     MULT18X18SIO:B16->P16    3   4.860   0.610  multplier_1/Mmult_mult_result_mult0000 (multplier_1/mult_result_mult0000<16>)
+     LUT2:I1->O            1   0.704   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_lut<0> (multplier_1/Mcompar_O_1_cmp_ge0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<0> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<1> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<2> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<3> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<4> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<5> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<6> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<7> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<8> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<9> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<10> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<11> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<12> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<13> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<14> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<15> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<15>)
+     MUXCY:CI->O          32   0.059   1.297  multplier_1/Mcompar_O_1_cmp_ge0000_cy<16> (multplier_1/O_1_cmp_ge0000)
+     LUT3:I2->O            0   0.704   0.000  multplier_1/O_1_mux0000<0>1 (multplier_1/O_1_mux0000<0>)
+     MUXCY:DI->O           1   0.888   0.000  multplier_1/Maddsub_O_1_cy<0> (multplier_1/Maddsub_O_1_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<1> (multplier_1/Maddsub_O_1_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<2> (multplier_1/Maddsub_O_1_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<3> (multplier_1/Maddsub_O_1_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<4> (multplier_1/Maddsub_O_1_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<5> (multplier_1/Maddsub_O_1_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<6> (multplier_1/Maddsub_O_1_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<7> (multplier_1/Maddsub_O_1_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<8> (multplier_1/Maddsub_O_1_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<9> (multplier_1/Maddsub_O_1_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<10> (multplier_1/Maddsub_O_1_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<11> (multplier_1/Maddsub_O_1_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<12> (multplier_1/Maddsub_O_1_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<13> (multplier_1/Maddsub_O_1_cy<13>)
+     XORCY:CI->O           5   0.804   0.637  multplier_1/Maddsub_O_1_xor<14> (mul1_out<14>)
+     LUT4:I3->O            1   0.704   0.000  adder_1/Madd_O_1_lut<14> (adder_1/Madd_O_1_lut<14>)
+     MUXCY:S->O            0   0.464   0.000  adder_1/Madd_O_1_cy<14> (adder_1/Madd_O_1_cy<14>)
+     XORCY:CI->O           4   0.804   0.762  adder_1/Madd_O_1_xor<15> (adder1_out<15>)
+     LUT2:I0->O            1   0.704   0.420  xor_4/Mxor_O_1_Result<15>1 (Y4_15_OBUF)
+     OBUF:I->O                 3.272          Y4_15_OBUF (Y4<15>)
+    ----------------------------------------
+    Total                     24.940ns (19.107ns logic, 5.833ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 46133760 / 64
+-------------------------------------------------------------------------
+Delay:               26.560ns (Levels of Logic = 45)
+  Source:            SEL<0> (PAD)
+  Destination:       Y3<15> (PAD)
+
+  Data Path: SEL<0> to Y3<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           112   1.218   1.462  SEL_0_IBUF (SEL_0_IBUF)
+     LUT3:I0->O            1   0.704   0.000  mux1/Mmux_O_3 (mux1/Mmux_O_3)
+     MUXF5:I1->O           2   0.321   0.622  mux1/Mmux_O_2_f5 (mux1_out<0>)
+     LUT4:I0->O            1   0.704   0.595  multplier_1/a_temp_cmp_eq000012 (multplier_1/a_temp_cmp_eq000012)
+     LUT4:I0->O            1   0.704   0.420  multplier_1/a_temp_cmp_eq000076 (multplier_1/a_temp_cmp_eq0000)
+     MULT18X18SIO:A16->P16    3   4.860   0.610  multplier_1/Mmult_mult_result_mult0000 (multplier_1/mult_result_mult0000<16>)
+     LUT2:I1->O            1   0.704   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_lut<0> (multplier_1/Mcompar_O_1_cmp_ge0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<0> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<1> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<2> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<3> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<4> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<5> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<6> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<7> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<8> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<9> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<10> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<11> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<12> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<13> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<14> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Mcompar_O_1_cmp_ge0000_cy<15> (multplier_1/Mcompar_O_1_cmp_ge0000_cy<15>)
+     MUXCY:CI->O          32   0.059   1.297  multplier_1/Mcompar_O_1_cmp_ge0000_cy<16> (multplier_1/O_1_cmp_ge0000)
+     LUT3:I2->O            0   0.704   0.000  multplier_1/O_1_mux0000<0>1 (multplier_1/O_1_mux0000<0>)
+     MUXCY:DI->O           1   0.888   0.000  multplier_1/Maddsub_O_1_cy<0> (multplier_1/Maddsub_O_1_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<1> (multplier_1/Maddsub_O_1_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<2> (multplier_1/Maddsub_O_1_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<3> (multplier_1/Maddsub_O_1_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<4> (multplier_1/Maddsub_O_1_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<5> (multplier_1/Maddsub_O_1_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<6> (multplier_1/Maddsub_O_1_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<7> (multplier_1/Maddsub_O_1_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<8> (multplier_1/Maddsub_O_1_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<9> (multplier_1/Maddsub_O_1_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<10> (multplier_1/Maddsub_O_1_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<11> (multplier_1/Maddsub_O_1_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<12> (multplier_1/Maddsub_O_1_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  multplier_1/Maddsub_O_1_cy<13> (multplier_1/Maddsub_O_1_cy<13>)
+     XORCY:CI->O           5   0.804   0.637  multplier_1/Maddsub_O_1_xor<14> (mul1_out<14>)
+     LUT4:I3->O            1   0.704   0.000  adder_1/Madd_O_1_lut<14> (adder_1/Madd_O_1_lut<14>)
+     MUXCY:S->O            0   0.464   0.000  adder_1/Madd_O_1_cy<14> (adder_1/Madd_O_1_cy<14>)
+     XORCY:CI->O           4   0.804   0.762  adder_1/Madd_O_1_xor<15> (adder1_out<15>)
+     LUT2:I0->O            1   0.704   0.420  xor_4/Mxor_O_1_Result<15>1 (Y4_15_OBUF)
+     OBUF:I->O                 3.272          Y4_15_OBUF (Y4<15>)
+    ----------------------------------------
+    Total                     26.560ns (19.734ns logic, 6.826ns route)
+                                       (74.3% logic, 25.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.16 secs
+ 
+--> 
+
+
+Total memory usage is 516084 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -11,3 +11,12 @@ xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct
 xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.syr" 
 xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.syr" 
 xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.syr" 
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.syr" 
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 idea.ngc idea.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o idea_map.ncd idea.ngd idea.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o idea_map.ncd idea.ngd idea.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o idea_map.ncd idea.ngd idea.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o idea_map.ncd idea.ngd idea.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o idea_map.ncd idea.ngd idea.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o idea_map.ncd idea.ngd idea.pcf 

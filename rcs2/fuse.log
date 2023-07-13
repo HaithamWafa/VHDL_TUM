@@ -1,0 +1,46 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/haitham/VHDL_LAB/submission_template/submit/rcs2/tb_idea_rcs2_isim_beh.exe -prj /home/haitham/VHDL_LAB/submission_template/submit/rcs2/tb_idea_rcs2_beh.prj work.tb_idea_rcs2 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/xorop.vhd" into library work
+Parsing VHDL file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/reg16.vhd" into library work
+Parsing VHDL file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux4x1.vhd" into library work
+Parsing VHDL file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/mulop.vhd" into library work
+Parsing VHDL file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/addop.vhd" into library work
+Parsing VHDL file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/datapath.vhd" into library work
+Parsing VHDL file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/control_ext.vhd" into library work
+Parsing VHDL file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/roundcounter.vhd" into library work
+Parsing VHDL file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux21.vhd" into library work
+Parsing VHDL file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/key_generator.vhd" into library work
+Parsing VHDL file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/clockedround_ext.vhd" into library work
+Parsing VHDL file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/idea_rcs2.vhd" into library work
+Parsing VHDL file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/tb_idea_rcs2.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 86940 KB
+Fuse CPU Usage: 840 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity control_ext [control_ext_default]
+Compiling package numeric_std
+Compiling architecture behavioral of entity mux4x1 [mux4x1_default]
+Compiling architecture behavioral of entity mulop [mulop_default]
+Compiling architecture behavioral of entity addop [addop_default]
+Compiling architecture behavioral of entity xorop [xorop_default]
+Compiling architecture behavioral of entity reg16 [reg16_default]
+Compiling architecture behavioral of entity datapath [datapath_default]
+Compiling architecture structural of entity clockedround_ext [clockedround_ext_default]
+Compiling architecture behavioral of entity roundcounter [roundcounter_default]
+Compiling architecture behavioral of entity key_generator [key_generator_default]
+Compiling architecture behavioral of entity mux21 [mux21_default]
+Compiling architecture structural of entity idea_rcs2 [idea_rcs2_default]
+Compiling architecture behavior of entity tb_idea_rcs2
+Time Resolution for simulation is 1ps.
+Compiled 30 VHDL Units
+Built simulation executable /home/haitham/VHDL_LAB/submission_template/submit/rcs2/tb_idea_rcs2_isim_beh.exe
+Fuse Memory Usage: 1711676 KB
+Fuse CPU Usage: 960 ms
+GCC CPU Usage: 1060 ms

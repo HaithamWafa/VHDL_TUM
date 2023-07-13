@@ -71,7 +71,7 @@ component idea_rcs2
            Y_4 : out  STD_LOGIC_VECTOR (15 downto 0));
 end component;
 
-component mux2x1 is
+component mux21 is
     Port ( D0 : in  STD_LOGIC_VECTOR (15 downto 0);
            D1 : in  STD_LOGIC_VECTOR (15 downto 0);
            S : in  STD_LOGIC;
@@ -117,22 +117,22 @@ begin
 	idea1:   idea_rcs2 port map( clk, start_idea, ready_idea, key, x1, x2, x3, x4, y1, y2, y3, y4);
 	
 	-- mux for loopback mode
-	mux1 : mux2x1 port map(
+	mux1 : mux21 port map(
 		D0 => y1,
 		D1 => x1,
 		S => loopback_select,
 		O => z1);		
-	mux2 : mux2x1 port map(
+	mux2 : mux21 port map(
 		D0 => y2,
 		D1 => x2,
 		S => loopback_select,
 		O => z2);		
-	mux3 : mux2x1 port map(
+	mux3 : mux21 port map(
 		D0 => y3,
 		D1 => X3,
 		S => loopback_select,
 		O => z3);		
-	mux4 : mux2x1 port map(
+	mux4 : mux21 port map(
 		D0 => y4,
 		D1 => X4,
 		S => loopback_select,

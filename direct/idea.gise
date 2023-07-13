@@ -34,10 +34,13 @@
     <file xil_pn:fileType="FILE_XST" xil_pn:name="addop.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="addop_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="idea.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="idea.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="idea.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="idea.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="idea.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="idea.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="idea.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="idea.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="idea.spl"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="idea.stx"/>
@@ -46,7 +49,15 @@
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="idea.vhi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="idea.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="idea_envsettings.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="idea_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="idea_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="idea_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="idea_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="idea_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="idea_ngdbuild.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="idea_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="idea_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="idea_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="idea_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="idea_xst.xrpt"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
@@ -176,11 +187,11 @@
       <outfile xil_pn:name="trafo.vhd"/>
       <outfile xil_pn:name="xorop.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1685291473" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3203422315426294082" xil_pn:start_ts="1685291473">
+    <transform xil_pn:end_ts="1687371253" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3203422315426294082" xil_pn:start_ts="1687371253">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1685291473" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4091505698327849024" xil_pn:start_ts="1685291473">
+    <transform xil_pn:end_ts="1687371253" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4091505698327849024" xil_pn:start_ts="1687371253">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -204,7 +215,7 @@
       <outfile xil_pn:name="trafo.vhd"/>
       <outfile xil_pn:name="xorop.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1685291474" xil_pn:in_ck="7551814482918048324" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8573578324093948766" xil_pn:start_ts="1685291473">
+    <transform xil_pn:end_ts="1687371254" xil_pn:in_ck="7551814482918048324" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8573578324093948766" xil_pn:start_ts="1687371253">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -216,14 +227,12 @@
       <outfile xil_pn:name="tb_idea_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1685291474" xil_pn:in_ck="-7137857217167116933" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="998760500765076171" xil_pn:start_ts="1685291474">
+    <transform xil_pn:end_ts="1687371254" xil_pn:in_ck="-7137857217167116933" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="998760500765076171" xil_pn:start_ts="1687371254">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_idea_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1684337444" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1684337444">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -253,14 +262,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1685290537" xil_pn:in_ck="4401986492268061892" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="4570376269037468023" xil_pn:start_ts="1685290514">
+    <transform xil_pn:end_ts="1687368399" xil_pn:in_ck="4401986492268061892" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="4570376269037468023" xil_pn:start_ts="1687368377">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="idea.lso"/>
@@ -278,6 +283,28 @@
     <transform xil_pn:end_ts="1684935866" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-167015986566472889" xil_pn:start_ts="1684935866">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1687368888" xil_pn:in_ck="3402695935736113479" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-979839613542142393" xil_pn:start_ts="1687368883">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="idea.bld"/>
+      <outfile xil_pn:name="idea.ngd"/>
+      <outfile xil_pn:name="idea_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1687370143" xil_pn:in_ck="-2312115045780608822" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1687370129">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="idea.pcf"/>
+      <outfile xil_pn:name="idea_map.map"/>
+      <outfile xil_pn:name="idea_map.mrp"/>
+      <outfile xil_pn:name="idea_map.ncd"/>
+      <outfile xil_pn:name="idea_map.ngm"/>
+      <outfile xil_pn:name="idea_map.xrpt"/>
+      <outfile xil_pn:name="idea_summary.xml"/>
+      <outfile xil_pn:name="idea_usage.xml"/>
     </transform>
   </transforms>
 

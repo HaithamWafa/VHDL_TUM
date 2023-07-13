@@ -1,0 +1,791 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: idea_rcs2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "idea_rcs2.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "idea_rcs2"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : idea_rcs2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux4x1.vhd" in Library work.
+Architecture behavioral of Entity mux4x1 is up to date.
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/mulop.vhd" in Library work.
+Architecture behavioral of Entity mulop is up to date.
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/addop.vhd" in Library work.
+Architecture behavioral of Entity addop is up to date.
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/xorop.vhd" in Library work.
+Architecture behavioral of Entity xorop is up to date.
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/reg16.vhd" in Library work.
+Architecture behavioral of Entity reg16 is up to date.
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/control_ext.vhd" in Library work.
+Architecture behavioral of Entity control_ext is up to date.
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/datapath.vhd" in Library work.
+Architecture behavioral of Entity datapath is up to date.
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/clockedround_ext.vhd" in Library work.
+Architecture structural of Entity clockedround_ext is up to date.
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/roundcounter.vhd" in Library work.
+Architecture behavioral of Entity roundcounter is up to date.
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/key_generator.vhd" in Library work.
+Architecture behavioral of Entity key_generator is up to date.
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux21.vhd" in Library work.
+Architecture behavioral of Entity mux21 is up to date.
+Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/idea_rcs2.vhd" in Library work.
+Entity <idea_rcs2> compiled.
+Entity <idea_rcs2> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <idea_rcs2> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <clockedround_ext> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <roundcounter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <key_generator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux21> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reg16> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <control_ext> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <datapath> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux4x1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mulop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <addop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <xorop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reg16> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <idea_rcs2> in library <work> (Architecture <structural>).
+Entity <idea_rcs2> analyzed. Unit <idea_rcs2> generated.
+
+Analyzing Entity <clockedround_ext> in library <work> (Architecture <structural>).
+Entity <clockedround_ext> analyzed. Unit <clockedround_ext> generated.
+
+Analyzing Entity <control_ext> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/control_ext.vhd" line 203: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/control_ext.vhd" line 58: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <start>, <TRAFO>, <enable_1>, <enable_2>, <enable_3>, <result_internal>, <S_in>, <ST_in>
+Entity <control_ext> analyzed. Unit <control_ext> generated.
+
+Analyzing Entity <datapath> in library <work> (Architecture <behavioral>).
+Entity <datapath> analyzed. Unit <datapath> generated.
+
+Analyzing Entity <mux4x1> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux4x1.vhd" line 56: Mux is complete : default of case is discarded
+Entity <mux4x1> analyzed. Unit <mux4x1> generated.
+
+Analyzing Entity <mulop> in library <work> (Architecture <behavioral>).
+Entity <mulop> analyzed. Unit <mulop> generated.
+
+Analyzing Entity <addop> in library <work> (Architecture <behavioral>).
+Entity <addop> analyzed. Unit <addop> generated.
+
+Analyzing Entity <xorop> in library <work> (Architecture <behavioral>).
+Entity <xorop> analyzed. Unit <xorop> generated.
+
+Analyzing Entity <roundcounter> in library <work> (Architecture <behavioral>).
+Entity <roundcounter> analyzed. Unit <roundcounter> generated.
+
+Analyzing Entity <key_generator> in library <work> (Architecture <behavioral>).
+Entity <key_generator> analyzed. Unit <key_generator> generated.
+
+Analyzing Entity <mux21> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux21.vhd" line 50: Mux is complete : default of case is discarded
+Entity <mux21> analyzed. Unit <mux21> generated.
+
+Analyzing Entity <reg16> in library <work> (Architecture <behavioral>).
+Entity <reg16> analyzed. Unit <reg16> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <roundcounter>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/roundcounter.vhd".
+    Found finite state machine <FSM_0> for signal <CurrentState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Power Up State     | sleep                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <CurrentState_counter>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 18                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 9                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Power Up State     | 1000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 1-bit latch for signal <INIT>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <READY>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Summary:
+	inferred   2 Finite State Machine(s).
+Unit <roundcounter> synthesized.
+
+
+Synthesizing Unit <key_generator>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/key_generator.vhd".
+Unit <key_generator> synthesized.
+
+
+Synthesizing Unit <mux21>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux21.vhd".
+Unit <mux21> synthesized.
+
+
+Synthesizing Unit <reg16>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/reg16.vhd".
+    Found 16-bit register for signal <data_out>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <reg16> synthesized.
+
+
+Synthesizing Unit <control_ext>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/control_ext.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <result_internal>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enable_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enable_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enable_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 2-bit latch for signal <S_in>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 2-bit latch for signal <ST_in>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit 8-to-1 multiplexer for signal <enable_1$mux0001> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <enable_2$mux0001> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <enable_3$mux0001> created at line 63.
+    Found 3-bit up counter for signal <internal_state>.
+    Found 1-bit 8-to-1 multiplexer for signal <result_internal$mux0001> created at line 63.
+    Found 2-bit 8-to-1 multiplexer for signal <S_in$mux0001> created at line 63.
+    Found 2-bit 8-to-1 multiplexer for signal <ST_in$mux0002> created at line 63.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   8 Multiplexer(s).
+Unit <control_ext> synthesized.
+
+
+Synthesizing Unit <mux4x1>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/mux4x1.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <O>.
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <mux4x1> synthesized.
+
+
+Synthesizing Unit <mulop>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/mulop.vhd".
+    Found 16-bit addsub for signal <O_1>.
+    Found 17x17-bit multiplier for signal <mult_result$mult0000> created at line 58.
+    Found 16-bit subtractor for signal <O_1$addsub0000> created at line 69.
+    Found 17-bit comparator greatequal for signal <O_1$cmp_ge0000> created at line 63.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   1 Comparator(s).
+Unit <mulop> synthesized.
+
+
+Synthesizing Unit <addop>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/addop.vhd".
+    Found 16-bit adder for signal <O_1>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <addop> synthesized.
+
+
+Synthesizing Unit <xorop>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/xorop.vhd".
+    Found 16-bit xor2 for signal <O_1>.
+Unit <xorop> synthesized.
+
+
+Synthesizing Unit <datapath>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/datapath.vhd".
+Unit <datapath> synthesized.
+
+
+Synthesizing Unit <clockedround_ext>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/clockedround_ext.vhd".
+Unit <clockedround_ext> synthesized.
+
+
+Synthesizing Unit <idea_rcs2>.
+    Related source file is "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/idea_rcs2.vhd".
+Unit <idea_rcs2> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 17x17-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 1
+ 16-bit addsub                                         : 1
+ 16-bit subtractor                                     : 1
+# Counters                                             : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 12
+ 16-bit register                                       : 12
+# Latches                                              : 8
+ 1-bit latch                                           : 6
+ 2-bit latch                                           : 2
+# Comparators                                          : 1
+ 17-bit comparator greatequal                          : 1
+# Multiplexers                                         : 10
+ 1-bit 8-to-1 multiplexer                              : 4
+ 16-bit 4-to-1 multiplexer                             : 4
+ 2-bit 8-to-1 multiplexer                              : 2
+# Xors                                                 : 5
+ 16-bit xor2                                           : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <rc1/CurrentState_counter/FSM> on signal <CurrentState_counter[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 1000  | 1000
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <rc1/CurrentState/FSM> on signal <CurrentState[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ sleep | 00
+ setup | 01
+ calc  | 10
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# Multipliers                                          : 1
+ 17x17-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 1
+ 16-bit addsub                                         : 1
+ 16-bit subtractor                                     : 1
+# Counters                                             : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 192
+ Flip-Flops                                            : 192
+# Latches                                              : 8
+ 1-bit latch                                           : 6
+ 2-bit latch                                           : 2
+# Comparators                                          : 1
+ 17-bit comparator greatequal                          : 1
+# Multiplexers                                         : 10
+ 1-bit 8-to-1 multiplexer                              : 4
+ 16-bit 4-to-1 multiplexer                             : 4
+ 2-bit 8-to-1 multiplexer                              : 2
+# Xors                                                 : 5
+ 16-bit xor2                                           : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit control_ext : the following signal(s) form a combinatorial loop: start.
+
+Optimizing unit <idea_rcs2> ...
+
+Optimizing unit <key_generator> ...
+
+Optimizing unit <roundcounter> ...
+WARNING:Xst:1294 - Latch <INIT> is equivalent to a wire in block <roundcounter>.
+
+Optimizing unit <reg16> ...
+
+Optimizing unit <mulop> ...
+
+Optimizing unit <control_ext> ...
+
+Optimizing unit <datapath> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block idea_rcs2, actual ratio is 13.
+FlipFlop rc1/CurrentState_counter_FSM_FFd2 has been replicated 15 time(s)
+FlipFlop rc1/CurrentState_counter_FSM_FFd3 has been replicated 9 time(s)
+FlipFlop rc1/CurrentState_counter_FSM_FFd4 has been replicated 6 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 231
+ Flip-Flops                                            : 231
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : idea_rcs2.ngr
+Top Level Output File Name         : idea_rcs2
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 259
+
+Cell Usage :
+# BELS                             : 1346
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 118
+#      LUT2_D                      : 2
+#      LUT3                        : 255
+#      LUT3_L                      : 96
+#      LUT4                        : 497
+#      LUT4_D                      : 1
+#      LUT4_L                      : 54
+#      MUXCY                       : 62
+#      MUXF5                       : 209
+#      VCC                         : 1
+#      XORCY                       : 48
+# FlipFlops/Latches                : 240
+#      FD                          : 35
+#      FDE                         : 192
+#      FDR                         : 1
+#      FDS                         : 2
+#      FDSE                        : 1
+#      LD                          : 9
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 258
+#      IBUF                        : 193
+#      OBUF                        : 65
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      531  out of   4656    11%  
+ Number of Slice Flip Flops:            239  out of   9312     2%  
+ Number of 4 input LUTs:               1025  out of   9312    11%  
+ Number of IOs:                         259
+ Number of bonded IOBs:                 259  out of    232   111% (*) 
+    IOB Flip Flops:                       1
+ Number of MULT18X18SIOs:                 1  out of     20     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------+--------------------------------+-------+
+Clock Signal                                      | Clock buffer(FF name)          | Load  |
+--------------------------------------------------+--------------------------------+-------+
+CLOCK                                             | BUFGP                          | 231   |
+rc1/READY_or0000(rc1/READY_or00001:O)             | NONE(*)(rc1/READY)             | 1     |
+ccdr_ext1/ctrl1/start(ccdr_ext1/ctrl1/_n0000_f5:O)| NONE(*)(ccdr_ext1/ctrl1/S_in_1)| 8     |
+--------------------------------------------------+--------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 26.018ns (Maximum Frequency: 38.435MHz)
+   Minimum input arrival time before clock: 26.065ns
+   Maximum output required time after clock: 4.368ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLOCK'
+  Clock period: 26.018ns (frequency: 38.435MHz)
+  Total number of paths / destination ports: 793879862 / 234
+-------------------------------------------------------------------------
+Delay:               26.018ns (Levels of Logic = 47)
+  Source:            rc1/CurrentState_counter_FSM_FFd3_1 (FF)
+  Destination:       reg4/data_out_15 (FF)
+  Source Clock:      CLOCK rising
+  Destination Clock: CLOCK rising
+
+  Data Path: rc1/CurrentState_counter_FSM_FFd3_1 to reg4/data_out_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              16   0.591   1.209  rc1/CurrentState_counter_FSM_FFd3_1 (rc1/CurrentState_counter_FSM_FFd3_1)
+     LUT2_D:I0->O         15   0.704   1.021  keygen/key6<9>23_SW0 (N511)
+     LUT4_L:I3->LO         1   0.704   0.104  keygen/key5<4>23 (keygen/key5<4>23)
+     LUT4:I3->O            1   0.704   0.455  keygen/key5<4>51_SW0 (N67)
+     LUT4:I2->O            1   0.704   0.000  ccdr_ext1/dp1/mux1/Mmux_O_310 (ccdr_ext1/dp1/mux1/Mmux_O_310)
+     MUXF5:I1->O           2   0.321   0.622  ccdr_ext1/dp1/mux1/Mmux_O_2_f5_9 (ccdr_ext1/dp1/mux1_out<4>)
+     LUT4:I0->O            1   0.704   0.499  ccdr_ext1/dp1/multplier_1/a_temp_cmp_eq000025 (ccdr_ext1/dp1/multplier_1/a_temp_cmp_eq000025)
+     LUT4:I1->O            1   0.704   0.420  ccdr_ext1/dp1/multplier_1/a_temp_cmp_eq000076 (ccdr_ext1/dp1/multplier_1/a_temp_cmp_eq0000)
+     MULT18X18SIO:A16->P16    3   4.860   0.610  ccdr_ext1/dp1/multplier_1/Mmult_mult_result_mult0000 (ccdr_ext1/dp1/multplier_1/mult_result_mult0000<16>)
+     LUT2:I1->O            1   0.704   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_lut<0> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<0> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<1> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<2> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<3> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<4> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<5> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<6> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<7> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<8> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<9> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<10> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<11> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<12> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<13> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<14> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<15> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<15>)
+     MUXCY:CI->O          32   0.059   1.266  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<16> (ccdr_ext1/dp1/multplier_1/O_1_cmp_ge0000)
+     LUT4:I3->O            1   0.704   0.000  ccdr_ext1/dp1/multplier_1/Maddsub_O_1_lut<0> (ccdr_ext1/dp1/multplier_1/Maddsub_O_1_lut<0>)
+     XORCY:LI->O           7   0.527   0.712  ccdr_ext1/dp1/multplier_1/Maddsub_O_1_xor<0> (ccdr_ext1/dp1/mul1_out<0>)
+     LUT4:I3->O            1   0.704   0.499  ccdr_ext1/dp1/mux4/Mmux_O2247 (ccdr_ext1/dp1/mux4_out<0>)
+     LUT2:I1->O            1   0.704   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_lut<0> (ccdr_ext1/dp1/adder_1/Madd_O_1_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<0> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<1> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<2> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<3> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<4> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<5> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<6> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<7> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<8> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<9> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<10> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<11> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<12> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<13> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<14> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<14>)
+     XORCY:CI->O           6   0.804   0.748  ccdr_ext1/dp1/adder_1/Madd_O_1_xor<15> (ccdr_ext1/dp1/adder1_out<15>)
+     LUT2:I1->O            1   0.704   0.000  ccdr_ext1/dp1/xor_4/Mxor_O_1_Result<15>1 (R4_in<15>)
+     FDE:D                     0.308          reg4/data_out_15
+    ----------------------------------------
+    Total                     26.018ns (17.853ns logic, 8.165ns route)
+                                       (68.6% logic, 31.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ccdr_ext1/ctrl1/start'
+  Clock period: 3.452ns (frequency: 289.722MHz)
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               3.452ns (Levels of Logic = 2)
+  Source:            ccdr_ext1/ctrl1/enable_1 (LATCH)
+  Destination:       ccdr_ext1/ctrl1/enable_1 (LATCH)
+  Source Clock:      ccdr_ext1/ctrl1/start falling
+  Destination Clock: ccdr_ext1/ctrl1/start falling
+
+  Data Path: ccdr_ext1/ctrl1/enable_1 to ccdr_ext1/ctrl1/enable_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              49   0.676   1.443  ccdr_ext1/ctrl1/enable_1 (ccdr_ext1/ctrl1/enable_1)
+     LUT4:I0->O            1   0.704   0.000  ccdr_ext1/ctrl1/Mmux_enable_1_mux000111 (ccdr_ext1/ctrl1/Mmux_enable_1_mux00011)
+     MUXF5:I1->O           1   0.321   0.000  ccdr_ext1/ctrl1/Mmux_enable_1_mux00011_f5 (ccdr_ext1/ctrl1/enable_1_mux0001)
+     LD:D                      0.308          ccdr_ext1/ctrl1/enable_1
+    ----------------------------------------
+    Total                      3.452ns (2.009ns logic, 1.443ns route)
+                                       (58.2% logic, 41.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLOCK'
+  Total number of paths / destination ports: 484387346 / 194
+-------------------------------------------------------------------------
+Offset:              26.065ns (Levels of Logic = 48)
+  Source:            KEY<34> (PAD)
+  Destination:       reg4/data_out_15 (FF)
+  Destination Clock: CLOCK rising
+
+  Data Path: KEY<34> to reg4/data_out_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.218   0.844  KEY_34_IBUF (KEY_34_IBUF)
+     LUT3:I0->O            1   0.704   0.455  keygen/key1<4>42 (keygen/key1<11>14)
+     LUT3:I2->O            1   0.704   0.455  keygen/key1<4>49 (keygen/key1<4>49)
+     LUT4:I2->O            1   0.704   0.499  keygen/key1<4>83 (generated_key1<4>)
+     LUT3:I1->O            1   0.704   0.000  ccdr_ext1/dp1/mux2/Mmux_O_410 (ccdr_ext1/dp1/mux2/Mmux_O_410)
+     MUXF5:I0->O           2   0.321   0.622  ccdr_ext1/dp1/mux2/Mmux_O_2_f5_9 (ccdr_ext1/dp1/mux2_out<4>)
+     LUT4:I0->O            1   0.704   0.455  ccdr_ext1/dp1/multplier_1/b_temp_cmp_eq000025 (ccdr_ext1/dp1/multplier_1/b_temp_cmp_eq000025)
+     LUT4:I2->O            1   0.704   0.420  ccdr_ext1/dp1/multplier_1/b_temp_cmp_eq000076 (ccdr_ext1/dp1/multplier_1/b_temp_cmp_eq0000)
+     MULT18X18SIO:B16->P16    3   4.860   0.610  ccdr_ext1/dp1/multplier_1/Mmult_mult_result_mult0000 (ccdr_ext1/dp1/multplier_1/mult_result_mult0000<16>)
+     LUT2:I1->O            1   0.704   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_lut<0> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<0> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<1> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<2> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<3> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<4> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<5> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<6> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<7> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<8> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<9> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<10> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<11> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<12> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<13> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<14> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<15> (ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<15>)
+     MUXCY:CI->O          32   0.059   1.266  ccdr_ext1/dp1/multplier_1/Mcompar_O_1_cmp_ge0000_cy<16> (ccdr_ext1/dp1/multplier_1/O_1_cmp_ge0000)
+     LUT4:I3->O            1   0.704   0.000  ccdr_ext1/dp1/multplier_1/Maddsub_O_1_lut<0> (ccdr_ext1/dp1/multplier_1/Maddsub_O_1_lut<0>)
+     XORCY:LI->O           7   0.527   0.712  ccdr_ext1/dp1/multplier_1/Maddsub_O_1_xor<0> (ccdr_ext1/dp1/mul1_out<0>)
+     LUT4:I3->O            1   0.704   0.499  ccdr_ext1/dp1/mux4/Mmux_O2247 (ccdr_ext1/dp1/mux4_out<0>)
+     LUT2:I1->O            1   0.704   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_lut<0> (ccdr_ext1/dp1/adder_1/Madd_O_1_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<0> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<1> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<2> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<3> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<4> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<5> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<6> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<7> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<8> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<9> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<10> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<11> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<12> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<13> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  ccdr_ext1/dp1/adder_1/Madd_O_1_cy<14> (ccdr_ext1/dp1/adder_1/Madd_O_1_cy<14>)
+     XORCY:CI->O           6   0.804   0.748  ccdr_ext1/dp1/adder_1/Madd_O_1_xor<15> (ccdr_ext1/dp1/adder1_out<15>)
+     LUT2:I1->O            1   0.704   0.000  ccdr_ext1/dp1/xor_4/Mxor_O_1_Result<15>1 (R4_in<15>)
+     FDE:D                     0.308          reg4/data_out_15
+    ----------------------------------------
+    Total                     26.065ns (18.480ns logic, 7.585ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'rc1/READY_or0000'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            rc1/READY (LATCH)
+  Destination:       READY (PAD)
+  Source Clock:      rc1/READY_or0000 falling
+
+  Data Path: rc1/READY to READY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  rc1/READY (rc1/READY)
+     OBUF:I->O                 3.272          READY_OBUF (READY)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            ccdr_ext1/dp1/reg1/data_out_15 (FF)
+  Destination:       Y_1<15> (PAD)
+  Source Clock:      CLOCK rising
+
+  Data Path: ccdr_ext1/dp1/reg1/data_out_15 to Y_1<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.447  ccdr_ext1/dp1/reg1/data_out_15 (ccdr_ext1/dp1/reg1/data_out_15)
+     OBUF:I->O                 3.272          Y_1_15_OBUF (Y_1<15>)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.51 secs
+ 
+--> 
+
+
+Total memory usage is 535132 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

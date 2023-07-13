@@ -13,7 +13,7 @@ Parsing VHDL file "/home/haitham/VHDL_LAB/submission_template/submit/direct/tb_i
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 86524 KB
-Fuse CPU Usage: 950 ms
+Fuse CPU Usage: 870 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -31,5 +31,5 @@ Waiting for 1 sub-compilation(s) to finish...
 Compiled 18 VHDL Units
 Built simulation executable /home/haitham/VHDL_LAB/submission_template/submit/direct/tb_idea_isim_beh.exe
 Fuse Memory Usage: 1711232 KB
-Fuse CPU Usage: 1060 ms
-GCC CPU Usage: 490 ms
+Fuse CPU Usage: 990 ms
+GCC CPU Usage: 540 ms

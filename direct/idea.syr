@@ -118,8 +118,7 @@ Architecture behavioral of Entity round is up to date.
 Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/direct/trafo.vhd" in Library work.
 Architecture behavioral of Entity trafo is up to date.
 Compiling vhdl file "/home/haitham/VHDL_LAB/submission_template/submit/direct/idea.vhd" in Library work.
-Entity <idea> compiled.
-Entity <idea> (Architecture <structural>) compiled.
+Architecture structural of Entity idea is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -364,7 +363,7 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 21079077256083280523708284239628306458738956210693421434120446087534431443161702806642724652480946253621244049816615638924914484295575677304001764895476429179266171190078676893698190630167267184199429010355143971964972989102948352 / 64
+  Total number of paths / destination ports: 21079077256083283216897865832395542166125776245319298195894425132999447506281525177833587652586327175818510623941902667140194538658823146369951076989584007100707333763841672070772710247930901458331273047128375214867117877823012864 / 64
 -------------------------------------------------------------------------
 Delay:               683.132ns (Levels of Logic = 1064)
   Source:            X_1<0> (PAD)
@@ -1446,12 +1445,12 @@ Delay:               683.132ns (Levels of Logic = 1064)
 
 
 Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 20.95 secs
+Total CPU time to Xst completion: 20.85 secs
  
 --> 
 
 
-Total memory usage is 702612 kilobytes
+Total memory usage is 702592 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

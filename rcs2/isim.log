@@ -1,0 +1,46 @@
+ISim log file
+Running: /home/haitham/VHDL_LAB/submission_template/submit/rcs2/tb_idea_rcs2_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/haitham/VHDL_LAB/submission_template/submit/rcs2/tb_idea_rcs2_isim_beh.wdb 
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+Finished circuit initialization process.
+at 0 ps, Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 0 ps, Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 5 ns(5), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+at 5 ns(5), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 5 ns(5), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 5 ns(5), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 785 ns(4), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 825 ns(4), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 885 ns(4), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 925 ns(4), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 965 ns(4), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 985 ns(4), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# run 1 ms
+at 1025 ns(4), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 1125 ns(4), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 1145 ns(4), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 1205 ns(4), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 1265 ns(4), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 1305 ns(4), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 1365 ns(4), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 1405 ns(4), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+at 1425 ns(4), Instance /tb_idea_rcs2/uut/ccdr_ext1/dp1/multplier_1/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# exit 0

@@ -1,0 +1,7 @@
+vhdl work "txmit.vhd"
+vhdl work "rxcver.vhd"
+vhdl work "uart.vhd"
+vhdl work "idea_rcs2.vhd"
+vhdl work "idea_com_inner.vhd"
+vhdl work "clk_div.vhd"
+vhdl work "idea_com.vhd"

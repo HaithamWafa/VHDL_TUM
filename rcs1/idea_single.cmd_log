@@ -1,0 +1,20 @@
+vhdtdtfi -lib work reg16.vhd -lib work mux21.vhd -lib work key_generator.vhd -lib work control.vhd -lib work idea_single.vhd -prj idea_rcs1 -o idea_single.spl -module idea_single -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e idea_single.spl /home/haitham/VHDL_LAB/submission_template/submit/rcs1/idea_single.sym 
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/rcs1/idea_single.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/rcs1/idea_single.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 idea_single.ngc idea_single.ngd  
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/rcs1/idea_single.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/rcs1/idea_single.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 idea_single.ngc idea_single.ngd  
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/rcs1/idea_single.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/rcs1/idea_single.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 idea_single.ngc idea_single.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o idea_single_map.ncd idea_single.ngd idea_single.pcf 
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/rcs1/idea_single.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/rcs1/idea_single.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 idea_single.ngc idea_single.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o idea_single_map.ncd idea_single.ngd idea_single.pcf 
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/rcs1/idea_single.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/rcs1/idea_single.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 idea_single.ngc idea_single.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o idea_single_map.ncd idea_single.ngd idea_single.pcf 
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/rcs1/idea_single.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/rcs1/idea_single.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 idea_single.ngc idea_single.ngd  
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/rcs1/idea_single.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/rcs1/idea_single.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 idea_single.ngc idea_single.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o idea_single_map.ncd idea_single.ngd idea_single.pcf 

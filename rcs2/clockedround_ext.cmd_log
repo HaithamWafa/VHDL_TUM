@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/clockedround_ext.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/clockedround_ext.syr" 

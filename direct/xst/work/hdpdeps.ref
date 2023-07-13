@@ -1,19 +1,19 @@
 V3 26
 FL /home/haitham/VHDL_LAB/submission_template/submit/direct/addop.vhd 2023/05/28.19:24:39 P.20131013
-EN work/addop 1685291082 \
+EN work/addop 1687368381 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/addop.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/addop/Behavioral 1685291083 \
+AR work/addop/Behavioral 1687368382 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/addop.vhd \
-      EN work/addop 1685291082
+      EN work/addop 1687368381
 FL /home/haitham/VHDL_LAB/submission_template/submit/direct/idea.vhd 2023/05/28.19:15:13 P.20131013
-EN work/idea 1685290526 \
+EN work/idea 1687368389 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/idea.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/idea/Structural 1685290527 \
+AR work/idea/Structural 1687368390 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/idea.vhd \
-      EN work/idea 1685290526 CP round CP trafo
+      EN work/idea 1687368389 CP round CP trafo
 FL /home/haitham/VHDL_LAB/submission_template/submit/direct/module.vhd 2023/05/22.00:05:49 P.20131013
 EN work/module 1684752454 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/module.vhd \
@@ -21,32 +21,32 @@ EN work/module 1684752454 \
 AR work/module/Behavioral 1684752455 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/module.vhd \
       EN work/module 1684752454 CP mulop CP xorop CP addop
-FL /home/haitham/VHDL_LAB/submission_template/submit/direct/mulop.vhd 2023/05/21.16:07:56 P.20131013
-EN work/mulop 1685290516 \
+FL /home/haitham/VHDL_LAB/submission_template/submit/direct/mulop.vhd 2023/05/28.19:29:39 P.20131013
+EN work/mulop 1687368379 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/mulop.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/mulop/Behavioral 1685290517 \
+AR work/mulop/Behavioral 1687368380 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/mulop.vhd \
-      EN work/mulop 1685290516
-FL /home/haitham/VHDL_LAB/submission_template/submit/direct/round.vhd 2023/05/23.14:20:20 P.20131013
-EN work/round 1685290522 \
+      EN work/mulop 1687368379
+FL /home/haitham/VHDL_LAB/submission_template/submit/direct/round.vhd 2023/05/28.19:19:02 P.20131013
+EN work/round 1687368385 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/round.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/round/Behavioral 1685290523 \
+AR work/round/Behavioral 1687368386 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/round.vhd \
-      EN work/round 1685290522 CP mulop CP xorop CP addop
+      EN work/round 1687368385 CP mulop CP xorop CP addop
 FL /home/haitham/VHDL_LAB/submission_template/submit/direct/trafo.vhd 2023/05/22.14:10:57 P.20131013
-EN work/trafo 1685290524 \
+EN work/trafo 1687368387 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/trafo.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/trafo/Behavioral 1685290525 \
+AR work/trafo/Behavioral 1687368388 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/trafo.vhd \
-      EN work/trafo 1685290524 CP mulop CP addop
-FL /home/haitham/VHDL_LAB/submission_template/submit/direct/xorop.vhd 2023/05/09.00:31:19 P.20131013
-EN work/xorop 1685290520 \
+      EN work/trafo 1687368387 CP mulop CP addop
+FL /home/haitham/VHDL_LAB/submission_template/submit/direct/xorop.vhd 2023/05/28.19:19:02 P.20131013
+EN work/xorop 1687368383 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/xorop.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/xorop/Behavioral 1685290521 \
+AR work/xorop/Behavioral 1687368384 \
       FL /home/haitham/VHDL_LAB/submission_template/submit/direct/xorop.vhd \
-      EN work/xorop 1685290520
+      EN work/xorop 1687368383

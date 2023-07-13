@@ -1,15 +1,15 @@
 Command line:
    tb_idea_isim_beh.exe
      -simmode  gui
-     -simrunnum  0
-     -socket  45033
+     -simrunnum  3
+     -socket  40299
 
-Sun May 28 19:31:16 2023
+Wed Jun 21 21:14:16 2023
 
 
- Elaboration Time: 0.02 sec
+ Elaboration Time: 0.01 sec
 
- Current Memory Usage: 189.092 Meg
+ Current Memory Usage: 189.075 Meg
 
  Total Signals          : 607
  Total Nets             : 2128
@@ -21,9 +21,9 @@ Sun May 28 19:31:16 2023
  Total Scalar Nets and Variables : 2629
 Total Line Count : 584
 
- Total Simulation Time: 0.08 sec
+ Total Simulation Time: 0.1 sec
 
- Current Memory Usage: 264.593 Meg
+ Current Memory Usage: 264.577 Meg
 
-Sun May 28 19:32:41 2023
+Wed Jun 21 21:15:42 2023
 

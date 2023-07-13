@@ -1,5 +1,6 @@
 ISim log file
 Running: /home/haitham/VHDL_LAB/submission_template/submit/direct/tb_idea_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/haitham/VHDL_LAB/submission_template/submit/direct/tb_idea_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim3.wdb.
 ISim P.20131013 (signature 0xfbc00daa)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -347,4 +348,7 @@ at 10 ns(49), Instance /tb_idea/uut/round_8/multplier_1/ : Warning: NUMERIC_STD.
 at 10 ns(50), Instance /tb_idea/uut/round_8/multplier_4/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
 at 10 ns(54), Instance /tb_idea/uut/round_8/multplier_3/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
 at 10 ns(57), Instance /tb_idea/uut/output_trans/multplier_2/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# exit 0
+# exit 0
+# exit 0
 # exit 0

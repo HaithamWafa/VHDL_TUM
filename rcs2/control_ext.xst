@@ -1,0 +1,5 @@
+set -tmpdir "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/xst/projnav.tmp"
+set -xsthdpdir "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/xst"
+elaborate
+-ifn control_ext.prj
+-ifmt mixed

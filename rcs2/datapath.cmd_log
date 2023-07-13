@@ -1,0 +1,10 @@
+vhdtdtfi -lib work xorop.vhd -lib work reg16.vhd -lib work mux4x1.vhd -lib work mulop.vhd -lib work addop.vhd -lib work datapath.vhd -prj idea_rcs2 -o datapath.spl -module datapath -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e datapath.spl /home/haitham/VHDL_LAB/submission_template/submit/rcs2/datapath.sym 
+vhdtdtfi -lib work xorop.vhd -lib work reg16.vhd -lib work mux4x1.vhd -lib work mulop.vhd -lib work addop.vhd -lib work datapath.vhd -prj idea_rcs2 -o datapath.spl -module datapath -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e datapath.spl /home/haitham/VHDL_LAB/submission_template/submit/rcs2/datapath.sym 
+vhdtdtfi -lib work xorop.vhd -lib work reg16.vhd -lib work mux4x1.vhd -lib work mulop.vhd -lib work addop.vhd -lib work datapath.vhd -prj idea_rcs2 -o datapath.spl -module datapath -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e datapath.spl /home/haitham/VHDL_LAB/submission_template/submit/rcs2/datapath.sym 
+vhdtdtfi -lib work xorop.vhd -lib work reg16.vhd -lib work mux4x1.vhd -lib work mulop.vhd -lib work addop.vhd -lib work datapath.vhd -prj idea_rcs2 -o datapath.spl -module datapath -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e datapath.spl /home/haitham/VHDL_LAB/submission_template/submit/rcs2/datapath.sym 
+xst -intstyle ise -ifn "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/datapath.xst" -ofn "/home/haitham/VHDL_LAB/submission_template/submit/rcs2/datapath.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc idea_hw.ucf -p xc3s500e-fg320-4 datapath.ngc datapath.ngd  
